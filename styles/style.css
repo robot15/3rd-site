@@ -1,0 +1,66 @@
+@font-face {
+
+}
+
+:root{
+    --primary-color: #06b995;
+    --secondery-color: #5a6067;
+    --light-color: #f3f3f3;
+    --dark-color: #333333;
+    --max-width: 1200px;
+}
+.category{
+    --nature-color: #2c2c54;
+    --animal-color: #ff793f;
+}
+body{
+    font-family: "Vazir", Arial, sans-serif, Helvetica;
+    line-height: 1.7;
+    background: var(--light-color);
+}
+/*--Utility--*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.primary-color{
+    color: #06b995;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.bg-dark{
+    background: #222222;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+/*--Navbar--*/
+#main-nav div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#main-nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#main-nav li{
+    padding: .26rem 1rem;
+    border-radius: 5px;
+}
+#main-nav a {
+    color: white;
+}
+#main-nav li:hover{
+}
+#main-nav li:hover{
+    background: var(--primary-color);
+}
