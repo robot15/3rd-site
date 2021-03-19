@@ -1,66 +1,140 @@
 @font-face {
-
+    font-family: "Vazir";
+    src: url("/font/Vazir.eot");
+    /* IE9 Compat Modes */
+    src: url("../font/Vazir.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/Vazir.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../font/Vazir.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../font/Vazir.ttf") format("truetype");
+    /* Safari, Android, iOS */
 }
 
-:root{
+:root {
     --primary-color: #06b995;
     --secondery-color: #5a6067;
     --light-color: #f3f3f3;
     --dark-color: #333333;
     --max-width: 1200px;
 }
-.category{
+
+.category {
     --nature-color: #2c2c54;
     --animal-color: #ff793f;
 }
-body{
-    font-family: "Vazir", Arial, sans-serif, Helvetica;
-    line-height: 1.7;
+
+body {
+    font-family: "Vazir";
+    line-height: 2;
     background: var(--light-color);
 }
+
+
 /*--Utility--*/
-*{
+
+.btn {
+    color: #f3f3f3;
+    background: var(--primary-color);
+    padding: .85rem 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.primary-color{
+
+.primary-color {
     color: #06b995;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: auto;
+    padding: 0 2rem;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.bg-dark{
-    background: #222222;
+
+.bg-dark {
+    background: var(--dark-color);
     color: white;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
+.py1 {
+    padding: 1rem 0
+}
+
+.my1 {
+    margin: 1rem 0
+}
+
+
 /*--Navbar--*/
-#main-nav div{
+
+#main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav div {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 1rem;
 }
-#main-nav ul{
+
+#main-nav ul {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
 }
-#main-nav li{
+
+#main-nav li {
     padding: .26rem 1rem;
     border-radius: 5px;
 }
+
 #main-nav a {
     color: white;
 }
-#main-nav li:hover{
-}
-#main-nav li:hover{
+
+#main-nav li:hover {
     background: var(--primary-color);
+}
+
+
+/*--showcase--*/
+
+#showcase {
+    color: #f3f3f3;
+    height: 80vh;
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    text-align: center;
+    font-weight: bold;
+}
+
+#showcase .showcase-container {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase .btn {
+    margin: 1rem 0;
+}
+
+#showcase .btn:hover {
+    opacity: .9;
 }
