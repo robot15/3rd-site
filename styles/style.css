@@ -89,7 +89,7 @@ a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .85rem;
 }
 
 #main-nav ul {
@@ -137,4 +137,17 @@ a {
 
 #showcase .btn:hover {
     opacity: .9;
+}
+
+
+/*---home---*/
+
+#section1 .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#section1 img {
+    width: 100%;
 }
