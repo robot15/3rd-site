@@ -148,6 +148,36 @@ a {
     grid-gap: 1rem;
 }
 
+#section1 h2 {
+    margin: 1rem 2rem;
+}
+
 #section1 img {
     width: 100%;
+    border-radius: 15px;
+}
+
+#section1 article {
+    background-color: #e7e7e7;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#section1 .main article:first-child,
+#section1 .main article:last-child {
+    display: grid;
+    grid-template: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 1 / span 2;
+}
+
+#section1 .main article:first-child div:only-child,
+#section1 .main article:last-child div:only-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem
+}
+
+#section1 .main article:last-child {
+    grid-column: 2/span 2;
 }
