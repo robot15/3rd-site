@@ -59,13 +59,19 @@ ul {
     list-style: none;
 }
 
-.bg-dark {
-    background: var(--dark-color);
+.bg-primary {
+    background: var(--primary-color) !important;
     color: white;
+}
+
+.bg-dark {
+    background: var(--dark-color) !important;
+    color: white !important;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .py1 {
@@ -158,7 +164,7 @@ a {
 }
 
 #section1 article {
-    background-color: #e7e7e7;
+    background-color: #eeeeee;
     border-radius: 15px;
     padding: 5px;
 }
@@ -180,4 +186,50 @@ a {
 
 #section1 .main article:last-child {
     grid-column: 2/span 2;
+}
+
+
+/*---Footer---*/
+
+#main-footer .container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .5rem;
+}
+
+#main-footer input[type="email"],
+#main-footer input[type="submit"] {
+    width: 90%;
+    padding: .5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin: .25rem 0;
+}
+
+#main-footer input[type="submit"] {
+    background: var(--primary-color);
+}
+
+#main-footer .links a {
+    display: block;
+    border-bottom: var(--secondery-color) 1px dotted;
+    width: 90%;
+}
+
+#main-footer .btn {
+    padding: .5rem 1rem;
+    background: var(--secondery-color);
+}
+
+#main-footer .container div:last-child {
+    grid-column: 1/span 4;
+    background: var(--secondery-color);
+    padding: .5rem 0;
+    margin: .5rem;
+    border-radius: 4px;
+}
+
+#main-footer .container div:last-child p {
+    text-align: center;
 }
