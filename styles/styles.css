@@ -184,7 +184,6 @@ a {
 #section1 .main article:first-child,
 #section1 .main article:last-child {
     display: grid;
-    grid-template: repeat(2, 1fr);
     grid-gap: 1rem;
     grid-column: 1 / span 2;
 }
